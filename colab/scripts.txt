@@ -1,0 +1,10 @@
+#### COLOR DENOISING.PY FILE
+
+# train from scratch
+python3 train_color_denoising.py --train_batch 16 --out_dir ./colab/ --tqdm true
+
+
+# resume training by providing the folder name as model_name
+python3 train_color_denoising.py --train_batch 16 --out_dir ./colab/ --tqdm true --resume true --model_name 1011_CD_group_25
+
+####
