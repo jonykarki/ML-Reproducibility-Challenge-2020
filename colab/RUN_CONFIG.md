@@ -1,4 +1,4 @@
-CPU CONFIG:
+CPU CONFIG: (!lscpu)
 
 Architecture:        x86_64
 CPU op-mode(s):      32-bit, 64-bit
@@ -27,7 +27,7 @@ Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cm
 
 
 
-GPU CONFIG:
+GPU CONFIG: (!nvidia-smi)
 
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 455.23.05    Driver Version: 418.67       CUDA Version: 10.1     |
