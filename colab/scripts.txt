@@ -1,0 +1,2 @@
+python3 train_color_denoising.py --train_batch 16 --out_dir ./colab/ --tqdm true
+
