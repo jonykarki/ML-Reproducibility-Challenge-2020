@@ -1,10 +1,10 @@
 #### COLOR DENOISING.PY FILE
 
 # train from scratch
-python3 train_color_denoising.py --train_batch 2 --out_dir "../gdrive/My Drive/MLR2020" --noise_level 5
+python3 train_color_denoising.py --train_batch 4 --out_dir "../gdrive/My Drive/MLR2020" --noise_level 5
 
 
 # resume training by providing the folder name as model_name
-python3 train_color_denoising.py --train_batch 2 --out_dir "../gdrive/My Drive/MLR2020" --resume true --model_name 1011_CD_group_25 --noise_level 5
+python3 train_color_denoising.py --train_batch 4 --out_dir "../gdrive/My Drive/MLR2020" --resume true --model_name 1011_CD_group_25 --noise_level 5
 
 ####
