@@ -62,8 +62,18 @@ def fastSoftThrs(x, lmbda):
 def save_checkpoint(state,ckpt_path):
     torch.save(state, ckpt_path)
 
+#### NEW CODE
 def generate_key():
     return '{}'.format(randint(0, 100000))
+
+# author: jonykarki
+# instead of creating a random number for each run we create a new folder based on
+# DATE_TABLE-LOOKUP
+# table_lookup is just a string to make it easier to find the trained models
+from datetime import datetime
+def mlr_generate_key(table_lookup):
+    return f"{datetime.now().strftime('%m%d')}_{table_lookup}"
+####
 
 def show_mem():
     mem = torch.cuda.memory_allocated() * 1e-6
