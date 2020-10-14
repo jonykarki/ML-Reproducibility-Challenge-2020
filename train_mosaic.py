@@ -10,6 +10,10 @@ from ops.utils_blocks import block_module
 from ops.utils import show_mem, generate_key, save_checkpoint, str2bool, step_lr, get_lr
 from ops.utils import gen_bayer_mask
 
+#### NEW CODE, asimsedhain
+from ops.utils import mlr_generate_key
+
+
 parser = argparse.ArgumentParser()
 #model
 parser.add_argument("--mode", type=str, default='group',help='[group, sc]')
@@ -141,7 +145,14 @@ print('list trainable params: ', [n for n,p in model.named_parameters()])
 
 psnr = {x: np.zeros(args.num_epochs) for x in ['train', 'test', 'val']}
 
-model_name = args.model_name if args.model_name is not None else generate_key()
+#### NEW CODE, @jonykarki and @asimsedhain
+# table_lookup: MO_METHOD_NOISE-LEVEL_BATCH-SIZE
+# MO: Mosaic, Method: SC or GroupSC, the noise_level, and training batch size.
+table_lookup = f"MO_{args.mode}_{args.noise_level}_{args.train_batch}"
+model_name = args.model_name if args.model_name is not None else mlr_generate_key(table_lookup)
+
+
+# model_name = args.model_name if args.model_name is not None else generate_key()
 
 out_dir = os.path.join(args.out_dir, model_name)
 if not os.path.exists(out_dir):
