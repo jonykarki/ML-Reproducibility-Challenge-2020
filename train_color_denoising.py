@@ -129,10 +129,10 @@ print('Nb tensors: ',len(list(model.named_parameters())), "; Trainable Params: "
 psnr = {x: np.zeros(args.num_epochs) for x in ['train', 'test', 'val']}
 
 
-#### NEW CODE, @jonykarki
-# table_lookup: CD_METHOD_NOISE-LEVEL
-# CD: Color Denoising, Method: SC or GroupSC, and the noise_level
-table_lookup = f"CD_{args.mode}_{args.noise_level}"
+#### NEW CODE, @jonykarki and @asimsedhain
+# table_lookup: CD_METHOD_NOISE-LEVEL_BATCH-SIZE
+# CD: Color Denoising, Method: SC or GroupSC, the noise_level, and training batch size.
+table_lookup = f"CD_{args.mode}_{args.noise_level}_{args.train_batch}"
 model_name = args.model_name if args.model_name is not None else mlr_generate_key(table_lookup)
 
 # model_name = args.model_name if args.model_name is not None else generate_key()
