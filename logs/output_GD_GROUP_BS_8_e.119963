@@ -5,3 +5,23 @@ Inactive Modules:
 The following have been reloaded with a version change:
   1) impi/18.0.2 => impi/17.0.3     2) intel/18.0.2 => intel/17.0.4
 
+Traceback (most recent call last):
+  File "./train_gray_denoising.py", line 220, in <module>
+    for batch in tqdm(loader,disable=not args.tqdm):
+  File "/home1/07197/asedhain/.local/lib/python3.6/site-packages/tqdm/std.py", line 1152, in __iter__
+    for obj in iterable:
+  File "/home1/07197/asedhain/.local/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 363, in __next__
+    data = self._next_data()
+  File "/home1/07197/asedhain/.local/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 403, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home1/07197/asedhain/.local/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home1/07197/asedhain/.local/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home1/07197/asedhain/.local/lib/python3.6/site-packages/torch/utils/data/dataset.py", line 207, in __getitem__
+    return self.datasets[dataset_idx][sample_idx]
+  File "/work/07197/asedhain/maverick2/mlreproduce/ML-Reproducibility-Challenge-2020/dataloaders.py", line 42, in __getitem__
+    image = Image.open(img_name).convert('L')
+  File "/home1/07197/asedhain/.local/lib/python3.6/site-packages/PIL/Image.py", line 2878, in open
+    fp = builtins.open(filename, "rb")
+OSError: [Errno 5] Input/output error: './datasets/BSD400/test_042.png'
