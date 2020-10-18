@@ -10,7 +10,7 @@ from ops.utils_blocks import block_module
 from ops.utils import show_mem, generate_key, save_checkpoint, str2bool, step_lr, get_lr
 torch.Tensor.__str__ = lambda x: str(tuple(x.shape))
 
-#### NEW CODE, jonykarki
+# @jkarki, importing the new method 
 from ops.utils import mlr_generate_key
 
 parser = argparse.ArgumentParser()
@@ -73,9 +73,18 @@ parser.add_argument("--nu_var", type=float, default=0.01)
 parser.add_argument("--freq_var", type=int, default=3)
 parser.add_argument("--var_reg", type=str2bool, default=False)
 
+# @jkarki, add a new argument to specify the GPU device id
+parser.add_argument("--device_id", type=int, default=0, help="the device id (0-3) for tacc nodes to select a particular gpu to train on") 
+####
+
 args = parser.parse_args()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# @jkarki, set the torch device into the one from args
+torch.cuda.set_device(args.device_id)
+####
+
 device_name = torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu'
 capability = torch.cuda.get_device_capability(0) if torch.cuda.is_available() else os.cpu_count()
 

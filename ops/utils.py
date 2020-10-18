@@ -3,7 +3,14 @@ import torch.functional as F
 from random import randint
 import argparse
 import torch.nn as nn
+
+# @jkarki
+# causes the (Segmentation fault (core dumped) error with the default PyQt backend for matplotlib. replacing with Agg
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+####
+
 import numpy as np
 from PIL import Image
 
