@@ -1,3 +1,16 @@
+### Emails of authors:
+
+Bruno Lecouat
+bruno.lecouat@inria.fr
+
+Jean Ponce
+jean.ponce@inria.fr
+
+Julien Mairal
+julien.mairal@inria.fr
+
+
+
 # GroupSC
 
 This is the code for our **ECCV 2020** paper : 
