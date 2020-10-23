@@ -73,6 +73,10 @@ parser.add_argument("--nu_var", type=float, default=0.01)
 parser.add_argument("--freq_var", type=int, default=3)
 parser.add_argument("--var_reg", type=str2bool, default=False)
 
+# @jkarki, idk what the argument means but it's required for the csv report writing thing at the end
+parser.add_argument("--tb", type=str2bool, default=False)
+####
+
 # @jkarki, add a new argument to specify the GPU device id
 parser.add_argument("--device_id", type=int, default=0, help="the device id (0-3) for tacc nodes to select a particular gpu to train on") 
 ####
@@ -85,8 +89,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 torch.cuda.set_device(args.device_id)
 ####
 
-device_name = torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu'
-capability = torch.cuda.get_device_capability(0) if torch.cuda.is_available() else os.cpu_count()
+device_name = torch.cuda.get_device_name(args.device_id) if torch.cuda.is_available() else 'cpu'
+capability = torch.cuda.get_device_capability(args.device_id) if torch.cuda.is_available() else os.cpu_count()
 
 if torch.cuda.is_available():
     torch.backends.cudnn.benchmark = True

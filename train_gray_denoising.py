@@ -9,6 +9,9 @@ import time
 from ops.utils_blocks import block_module
 from ops.utils import show_mem, generate_key, save_checkpoint, str2bool, step_lr, get_lr
 
+# @jkarki, importing the new method 
+from ops.utils import mlr_generate_key
+
 parser = argparse.ArgumentParser()
 #model
 parser.add_argument("--mode", type=str, default='group',help='[group, sc]')
@@ -72,11 +75,20 @@ parser.add_argument("--var_reg", type=str2bool, default=False)
 
 parser.add_argument("--verbose", type=str2bool, default=0)
 
+# @jkarki, add a new argument to specify the GPU device id
+parser.add_argument("--device_id", type=int, default=0, help="the device id (0-3) for tacc nodes to select a particular gpu to train on") 
+####
+
 args = parser.parse_args()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-device_name = torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu'
-capability = torch.cuda.get_device_capability(0) if torch.cuda.is_available() else os.cpu_count()
+
+# @jkarki, set the torch device into the one from args
+torch.cuda.set_device(args.device_id)
+####
+
+device_name = torch.cuda.get_device_name(args.device_id) if torch.cuda.is_available() else 'cpu'
+capability = torch.cuda.get_device_capability(args.device_id) if torch.cuda.is_available() else os.cpu_count()
 
 if torch.cuda.is_available():
     torch.backends.cudnn.benchmark = True
@@ -129,7 +141,15 @@ print('Nb tensors: ',len(list(model.named_parameters())), "; Trainable Params: "
 
 psnr = {x: np.zeros(args.num_epochs) for x in ['train', 'test', 'val']}
 
-model_name = args.model_name if args.model_name is not None else generate_key()
+
+#### NEW CODE, @jonykarki and @asimsedhain
+# table_lookup: CD_METHOD_NOISE-LEVEL_BATCH-SIZE
+# CD: Color Denoising, Method: SC or GroupSC, the noise_level, and training batch size.
+table_lookup = f"GD_{args.mode}_{args.noise_level}_{args.train_batch}"
+model_name = args.model_name if args.model_name is not None else mlr_generate_key(table_lookup)
+
+# model_name = args.model_name if args.model_name is not None else generate_key()
+####
 
 out_dir = os.path.join(args.out_dir, model_name)
 if not os.path.exists(out_dir):

@@ -1,0 +1,6 @@
+
+Lmod is automatically replacing "python2/2.7.16" with "python3/3.7.0".
+
+/tmp/slurmd/job120671/slurm_script: line 15: /trained_model/1018_CD_group_5_2/log.txt: No such file or directory
+/tmp/slurmd/job120671/slurm_script: line 19: /trained_model/1018_CD_group_5_8/log.txt: No such file or directory
+/tmp/slurmd/job120671/slurm_script: line 17: /trained_model/1018_CD_group_5_4/log.txt: No such file or directory
