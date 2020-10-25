@@ -18,8 +18,9 @@ for i in trained_models:
         untested_models.append(i)
 
 untested_models = sorted(untested_models)
-for i in untested_models:
-    print(f"Testing {i}")
-    file = dict_[i.split("_")[1]]
-    noise_level = i.split("_")[-2]
-    subprocess.run(f"python3 test_{file}.py --model_name {os.path.join('trained_model', i, 'ckpt')} --noise_level {noise_level} > {os.path.join('trained_model', i, 'test_log.txt')}", shell=True)
+print(untested_models)
+#for i in untested_models:
+#    print(f"Testing {i}")
+#    file = dict_[i.split("_")[1]]
+#    noise_level = i.split("_")[-2]
+#    subprocess.run(f"python3 test_{file}.py --model_name {os.path.join('trained_model', i, 'ckpt')} --noise_level {noise_level} > {os.path.join('trained_model', i, 'test_log.txt')}", shell=True)
