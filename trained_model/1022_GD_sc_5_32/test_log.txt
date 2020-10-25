@@ -1,0 +1,10 @@
+test data : ['./datasets/BSD68']
+group mode
+loading spams dict @ ./datasets/dictionnaries/256_9x9.pt
+Arguments: {'mode': 'group', 'stride': 1, 'num_filters': 256, 'kernel_size': 9, 'noise_level': 5, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 1, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 25, 'aug_scale': 0, 'test_batch': 10, 'out_dir': './trained_model', 'model_name': 'trained_model/1022_GD_sc_5_32/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 12, 'stride_val': 48, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/BSD68', 'verbose': 0, 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  29 ; Trainable Params:  68434 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+Error(s) in loading state_dict for groupLista:
+	Missing key(s) in state_dict: "simLayer.0.mask", "std.0", "nu.0". 
+ckpt loading failed @trained_model/1022_GD_sc_5_32/ckpt, exit ...
