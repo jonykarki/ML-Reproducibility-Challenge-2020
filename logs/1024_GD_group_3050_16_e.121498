@@ -42,3 +42,4 @@ usage: train_color_denoising.py [-h] [--mode MODE] [--stride STRIDE]
                                 [--freq_var FREQ_VAR] [--var_reg VAR_REG]
                                 [--tb TB] [--device_id DEVICE_ID]
 train_color_denoising.py: error: unrecognized arguments: -
+slurmstepd: error: *** JOB 121498 ON c228-107 CANCELLED AT 2020-10-25T15:01:14 DUE TO TIME LIMIT ***

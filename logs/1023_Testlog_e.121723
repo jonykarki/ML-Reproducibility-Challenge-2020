@@ -1,0 +1,7 @@
+
+Lmod is automatically replacing "python2/2.7.16" with "python3/3.7.0".
+
+  File "MLR_TEST_LOG.py", line 25
+    subprocess.run(f"python3 test_{file}.py --mode {i.split("_")[2]} --model_name {os.path.join('trained_model', i, 'ckpt')} --noise_level {noise_level} > {os.path.join('trained_model', i, 'test_log.txt')}", shell=True)
+                                                             ^
+SyntaxError: invalid syntax
