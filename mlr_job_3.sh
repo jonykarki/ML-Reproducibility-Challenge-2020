@@ -13,6 +13,6 @@
 
 module load python3/3.7.0
 
-python3 train_color_denoising.py --train_batch 16 --noise_level 25 --device_id 0 --num_epochs 600 --out_dir trained_600 &
+python3 train_color_denoising.py --train_batch 16 --noise_level 25 --device_id 0 --num_epochs 600 --out_dir trained_600 --model_name 1026_CD_group_25_16 &
 
-python3 train_color_denoising.py --train_batch 16 --noise_level 50 --device_id 1 --num_epochs 600 --out_dir trained_600
+python3 train_color_denoising.py --train_batch 16 --noise_level 50 --device_id 1 --num_epochs 600 --out_dir trained_600 --model_name 1026_CD_group_50_16

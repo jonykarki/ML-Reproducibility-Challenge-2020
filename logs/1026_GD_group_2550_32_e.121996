@@ -1,0 +1,15 @@
+
+Lmod is automatically replacing "python2/2.7.16" with "python3/3.7.0".
+
+Traceback (most recent call last):
+  File "train_color_denoising.py", line 1, in <module>
+    import dataloaders
+  File "/work/07792/jkarki/maverick2/ML-Reproducibility-Challenge-2020/dataloaders.py", line 1, in <module>
+    from torchvision import transforms
+ModuleNotFoundError: No module named 'torchvision'
+Traceback (most recent call last):
+  File "train_color_denoising.py", line 1, in <module>
+    import dataloaders
+  File "/work/07792/jkarki/maverick2/ML-Reproducibility-Challenge-2020/dataloaders.py", line 1, in <module>
+    from torchvision import transforms
+ModuleNotFoundError: No module named 'torchvision'

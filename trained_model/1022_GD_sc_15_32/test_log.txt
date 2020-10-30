@@ -1,0 +1,79 @@
+test data : ['./datasets/BSD68']
+sc mode
+loading spams dict @ ./datasets/dictionnaries/256_9x9.pt
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 9, 'noise_level': 15, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 1, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 25, 'aug_scale': 0, 'test_batch': 10, 'out_dir': './trained_model', 'model_name': 'trained_model/1022_GD_sc_15_32/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 12, 'stride_val': 48, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/BSD68', 'verbose': 0, 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  68352 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1022_GD_sc_15_32/ckpt' (epoch 300)
+
+starting eval on test set with stride 12...
+psnr avg 30.069734573364258
+psnr avg 29.269527435302734
+psnr avg 32.37362289428711
+psnr avg 29.056493759155273
+psnr avg 31.863296508789062
+psnr avg 35.2545280456543
+psnr avg 35.368595123291016
+psnr avg 29.268348693847656
+psnr avg 35.08009338378906
+psnr avg 31.4996337890625
+psnr avg 29.817001342773438
+psnr avg 32.31266403198242
+psnr avg 31.192073822021484
+psnr avg 33.09663009643555
+psnr avg 31.197568893432617
+psnr avg 32.359012603759766
+psnr avg 30.030147552490234
+psnr avg 32.491764068603516
+psnr avg 35.8287353515625
+psnr avg 31.631078720092773
+psnr avg 33.80337142944336
+psnr avg 29.202747344970703
+psnr avg 32.084354400634766
+psnr avg 27.509212493896484
+psnr avg 31.309104919433594
+psnr avg 33.07777786254883
+psnr avg 31.88563346862793
+psnr avg 31.42946434020996
+psnr avg 30.310232162475586
+psnr avg 28.95340347290039
+psnr avg 32.21693420410156
+psnr avg 28.272510528564453
+psnr avg 31.437461853027344
+psnr avg 26.88901138305664
+psnr avg 29.646507263183594
+psnr avg 32.06546401977539
+psnr avg 32.87410354614258
+psnr avg 31.517169952392578
+psnr avg 33.25851058959961
+psnr avg 35.10226821899414
+psnr avg 30.839826583862305
+psnr avg 32.18380355834961
+psnr avg 30.86492919921875
+psnr avg 31.540538787841797
+psnr avg 32.93349075317383
+psnr avg 35.45195388793945
+psnr avg 30.644197463989258
+psnr avg 32.90933609008789
+psnr avg 32.60792541503906
+psnr avg 30.39577865600586
+psnr avg 30.548059463500977
+psnr avg 31.600318908691406
+psnr avg 27.417007446289062
+psnr avg 32.60372543334961
+psnr avg 28.926197052001953
+psnr avg 34.8952522277832
+psnr avg 30.739126205444336
+psnr avg 30.857696533203125
+psnr avg 40.037593841552734
+psnr avg 30.327735900878906
+psnr avg 29.26040267944336
+psnr avg 34.67591857910156
+psnr avg 27.458038330078125
+psnr avg 30.648773193359375
+psnr avg 30.63471221923828
+psnr avg 29.334585189819336
+psnr avg 29.03803253173828
+psnr avg 28.917970657348633
+psnr: 31.4735 (5.991 s/iter)

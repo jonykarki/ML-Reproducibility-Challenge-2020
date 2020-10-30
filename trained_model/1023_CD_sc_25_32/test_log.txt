@@ -1,0 +1,79 @@
+test data : ['./datasets/CBSD68']
+sc mode
+random init of weights 
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 25, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': 'trained_model/1023_CD_sc_25_32/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 10, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/CBSD68', 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  119040 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1023_CD_sc_25_32/ckpt' (epoch 300)
+
+starting eval on test set with stride 10...
+psnr avg 23.137008666992188
+psnr avg 21.55508041381836
+psnr avg 23.71250343322754
+psnr avg 23.789997100830078
+psnr avg 22.884462356567383
+psnr avg 24.208816528320312
+psnr avg 17.58274269104004
+psnr avg 25.28903579711914
+psnr avg 26.71247673034668
+psnr avg 21.036006927490234
+psnr avg 22.528789520263672
+psnr avg 23.25684356689453
+psnr avg 20.703227996826172
+psnr avg 20.580677032470703
+psnr avg 22.874969482421875
+psnr avg 18.68954849243164
+psnr avg 22.078365325927734
+psnr avg 18.88630485534668
+psnr avg 21.730043411254883
+psnr avg 21.180408477783203
+psnr avg 16.601520538330078
+psnr avg 17.88996696472168
+psnr avg 22.333797454833984
+psnr avg 29.847034454345703
+psnr avg 27.64554786682129
+psnr avg 15.063152313232422
+psnr avg 23.126314163208008
+psnr avg 23.592823028564453
+psnr avg 20.431604385375977
+psnr avg 21.55923843383789
+psnr avg 17.99468231201172
+psnr avg 20.844972610473633
+psnr avg 23.689666748046875
+psnr avg 29.655719757080078
+psnr avg 20.815746307373047
+psnr avg 21.434457778930664
+psnr avg 27.489044189453125
+psnr avg 19.934696197509766
+psnr avg 26.858627319335938
+psnr avg 23.570735931396484
+psnr avg 25.126611709594727
+psnr avg 20.807830810546875
+psnr avg 24.39145851135254
+psnr avg 20.21126937866211
+psnr avg 18.350271224975586
+psnr avg 32.10670471191406
+psnr avg 26.6167049407959
+psnr avg 19.752962112426758
+psnr avg 22.408302307128906
+psnr avg 19.207515716552734
+psnr avg 27.130891799926758
+psnr avg 24.16436767578125
+psnr avg 20.982288360595703
+psnr avg 18.68328285217285
+psnr avg 18.981964111328125
+psnr avg 25.41473388671875
+psnr avg 21.945573806762695
+psnr avg 27.08941650390625
+psnr avg 20.827396392822266
+psnr avg 17.117294311523438
+psnr avg 20.559711456298828
+psnr avg 17.995054244995117
+psnr avg 24.55764389038086
+psnr avg 23.533233642578125
+psnr avg 23.618064880371094
+psnr avg 26.818342208862305
+psnr avg 20.449291229248047
+psnr avg 23.879053115844727
+psnr: 22.4342 (9.605 s/iter)

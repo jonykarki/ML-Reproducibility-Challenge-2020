@@ -1,0 +1,4 @@
+
+Lmod is automatically replacing "python2/2.7.16" with "python3/3.7.0".
+
+slurmstepd: error: *** JOB 121755 ON c228-104 CANCELLED AT 2020-10-28T12:46:27 DUE TO TIME LIMIT ***

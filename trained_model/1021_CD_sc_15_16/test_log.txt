@@ -1,0 +1,79 @@
+test data : ['./datasets/CBSD68']
+sc mode
+random init of weights 
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 15, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': 'trained_model/1021_CD_sc_15_16/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 10, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/CBSD68', 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  119040 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1021_CD_sc_15_16/ckpt' (epoch 300)
+
+starting eval on test set with stride 10...
+psnr avg 23.554840087890625
+psnr avg 21.790525436401367
+psnr avg 24.179460525512695
+psnr avg 24.15911865234375
+psnr avg 23.177793502807617
+psnr avg 24.81264877319336
+psnr avg 17.612131118774414
+psnr avg 25.922605514526367
+psnr avg 27.604448318481445
+psnr avg 21.10690689086914
+psnr avg 22.6317138671875
+psnr avg 23.836894989013672
+psnr avg 20.797794342041016
+psnr avg 20.688064575195312
+psnr avg 23.70773696899414
+psnr avg 18.8304500579834
+psnr avg 22.239952087402344
+psnr avg 19.00720977783203
+psnr avg 22.03355598449707
+psnr avg 21.315624237060547
+psnr avg 16.818933486938477
+psnr avg 17.944568634033203
+psnr avg 22.776649475097656
+psnr avg 30.038442611694336
+psnr avg 28.474924087524414
+psnr avg 15.098448753356934
+psnr avg 23.556331634521484
+psnr avg 24.264013290405273
+psnr avg 20.601844787597656
+psnr avg 21.924875259399414
+psnr avg 18.098468780517578
+psnr avg 21.01398468017578
+psnr avg 24.335689544677734
+psnr avg 31.075408935546875
+psnr avg 20.950679779052734
+psnr avg 21.79793357849121
+psnr avg 27.8050537109375
+psnr avg 20.066551208496094
+psnr avg 27.662639617919922
+psnr avg 24.345922470092773
+psnr avg 25.52688217163086
+psnr avg 20.92098617553711
+psnr avg 25.2637939453125
+psnr avg 20.6422061920166
+psnr avg 18.498252868652344
+psnr avg 33.164188385009766
+psnr avg 27.113948822021484
+psnr avg 19.797733306884766
+psnr avg 22.701032638549805
+psnr avg 19.56397247314453
+psnr avg 27.81854820251465
+psnr avg 24.580965042114258
+psnr avg 21.314720153808594
+psnr avg 18.76946449279785
+psnr avg 19.0877742767334
+psnr avg 25.640594482421875
+psnr avg 22.05840301513672
+psnr avg 27.792417526245117
+psnr avg 20.962753295898438
+psnr avg 17.208524703979492
+psnr avg 20.690567016601562
+psnr avg 18.057527542114258
+psnr avg 24.70041275024414
+psnr avg 24.035140991210938
+psnr avg 24.21820640563965
+psnr avg 27.59925651550293
+psnr avg 20.738248825073242
+psnr avg 24.16657257080078
+psnr: 22.7984 (10.190 s/iter)
