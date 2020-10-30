@@ -1,0 +1,79 @@
+test data : ['./datasets/CBSD68']
+sc mode
+random init of weights 
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 10, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': 'trained_model/1023_CD_sc_10_32/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 10, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/CBSD68', 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  119040 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1023_CD_sc_10_32/ckpt' (epoch 300)
+
+starting eval on test set with stride 10...
+psnr avg 23.74243927001953
+psnr avg 21.910829544067383
+psnr avg 24.406845092773438
+psnr avg 24.349136352539062
+psnr avg 23.31111717224121
+psnr avg 25.12284278869629
+psnr avg 17.62618637084961
+psnr avg 26.269834518432617
+psnr avg 28.076961517333984
+psnr avg 21.150733947753906
+psnr avg 22.679553985595703
+psnr avg 24.11937713623047
+psnr avg 20.852689743041992
+psnr avg 20.738975524902344
+psnr avg 24.11128044128418
+psnr avg 18.89824104309082
+psnr avg 22.329729080200195
+psnr avg 19.073781967163086
+psnr avg 22.188379287719727
+psnr avg 21.380769729614258
+psnr avg 16.91716957092285
+psnr avg 17.972944259643555
+psnr avg 22.99272346496582
+psnr avg 30.125869750976562
+psnr avg 28.982975006103516
+psnr avg 15.141277313232422
+psnr avg 23.753437042236328
+psnr avg 24.59536361694336
+psnr avg 20.680908203125
+psnr avg 22.099363327026367
+psnr avg 18.181962966918945
+psnr avg 21.097517013549805
+psnr avg 24.689083099365234
+psnr avg 31.954296112060547
+psnr avg 21.0218505859375
+psnr avg 21.968074798583984
+psnr avg 27.96494483947754
+psnr avg 20.12488555908203
+psnr avg 28.047597885131836
+psnr avg 24.757139205932617
+psnr avg 25.709796905517578
+psnr avg 20.98061752319336
+psnr avg 25.677051544189453
+psnr avg 20.843997955322266
+psnr avg 18.571365356445312
+psnr avg 33.78148651123047
+psnr avg 27.352922439575195
+psnr avg 19.823131561279297
+psnr avg 22.846460342407227
+psnr avg 19.717777252197266
+psnr avg 28.187488555908203
+psnr avg 24.791080474853516
+psnr avg 21.48138999938965
+psnr avg 18.80913543701172
+psnr avg 19.14053726196289
+psnr avg 25.754587173461914
+psnr avg 22.123565673828125
+psnr avg 28.17793083190918
+psnr avg 21.032150268554688
+psnr avg 17.25448226928711
+psnr avg 20.753307342529297
+psnr avg 18.1014461517334
+psnr avg 24.77423095703125
+psnr avg 24.27412986755371
+psnr avg 24.56768798828125
+psnr avg 28.008712768554688
+psnr avg 20.865018844604492
+psnr avg 24.319034576416016
+psnr: 22.9872 (9.613 s/iter)

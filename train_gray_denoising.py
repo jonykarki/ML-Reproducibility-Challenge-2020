@@ -75,6 +75,10 @@ parser.add_argument("--var_reg", type=str2bool, default=False)
 
 parser.add_argument("--verbose", type=str2bool, default=0)
 
+# @jkarki, idk what the argument means but it's required for the csv report writing thing at the end
+parser.add_argument("--tb", type=str2bool, default=False)
+####
+
 # @jkarki, add a new argument to specify the GPU device id
 parser.add_argument("--device_id", type=int, default=0, help="the device id (0-3) for tacc nodes to select a particular gpu to train on") 
 ####

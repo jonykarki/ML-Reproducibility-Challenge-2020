@@ -1,3 +1,7 @@
 
 Lmod is automatically replacing "python2/2.7.16" with "python3/3.7.0".
 
+Traceback (most recent call last):
+  File "train_gray_denoising.py", line 343, in <module>
+    if args.tb and args.model_name is not None:
+AttributeError: 'Namespace' object has no attribute 'tb'

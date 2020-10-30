@@ -1,0 +1,79 @@
+test data : ['./datasets/CBSD68']
+sc mode
+random init of weights 
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 15, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': 'trained_model/1023_CD_sc_15_32/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 10, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/CBSD68', 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  119040 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1023_CD_sc_15_32/ckpt' (epoch 300)
+
+starting eval on test set with stride 10...
+psnr avg 23.556365966796875
+psnr avg 21.794137954711914
+psnr avg 24.1767520904541
+psnr avg 24.163105010986328
+psnr avg 23.176183700561523
+psnr avg 24.812850952148438
+psnr avg 17.613264083862305
+psnr avg 25.928909301757812
+psnr avg 27.607908248901367
+psnr avg 21.11041259765625
+psnr avg 22.633819580078125
+psnr avg 23.83395767211914
+psnr avg 20.79766845703125
+psnr avg 20.689666748046875
+psnr avg 23.708602905273438
+psnr avg 18.83127212524414
+psnr avg 22.238292694091797
+psnr avg 19.010929107666016
+psnr avg 22.038265228271484
+psnr avg 21.31598472595215
+psnr avg 16.81970977783203
+psnr avg 17.94415855407715
+psnr avg 22.7779483795166
+psnr avg 30.04228973388672
+psnr avg 28.479957580566406
+psnr avg 15.105086326599121
+psnr avg 23.555519104003906
+psnr avg 24.26738929748535
+psnr avg 20.601884841918945
+psnr avg 21.924362182617188
+psnr avg 18.104766845703125
+psnr avg 21.0159969329834
+psnr avg 24.338897705078125
+psnr avg 31.08424186706543
+psnr avg 20.952157974243164
+psnr avg 21.79876708984375
+psnr avg 27.80491828918457
+psnr avg 20.06538200378418
+psnr avg 27.650968551635742
+psnr avg 24.336957931518555
+psnr avg 25.527917861938477
+psnr avg 20.921117782592773
+psnr avg 25.26203155517578
+psnr avg 20.642242431640625
+psnr avg 18.49915313720703
+psnr avg 33.13548278808594
+psnr avg 27.12315559387207
+psnr avg 19.797651290893555
+psnr avg 22.700122833251953
+psnr avg 19.56610679626465
+psnr avg 27.827512741088867
+psnr avg 24.586240768432617
+psnr avg 21.3187198638916
+psnr avg 18.76927947998047
+psnr avg 19.08878517150879
+psnr avg 25.644350051879883
+psnr avg 22.05889892578125
+psnr avg 27.78968048095703
+psnr avg 20.96648406982422
+psnr avg 17.209609985351562
+psnr avg 20.691049575805664
+psnr avg 18.06192398071289
+psnr avg 24.7043399810791
+psnr avg 24.032726287841797
+psnr avg 24.213972091674805
+psnr avg 27.59769630432129
+psnr avg 20.736221313476562
+psnr avg 24.166669845581055
+psnr: 22.7992 (9.606 s/iter)

@@ -1,0 +1,79 @@
+test data : ['./datasets/CBSD68']
+sc mode
+random init of weights 
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 5, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': 'trained_model/1023_CD_sc_5_32/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 10, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/CBSD68', 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  119040 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1023_CD_sc_5_32/ckpt' (epoch 300)
+
+starting eval on test set with stride 10...
+psnr avg 23.890287399291992
+psnr avg 22.014747619628906
+psnr avg 24.624422073364258
+psnr avg 24.573097229003906
+psnr avg 23.44135093688965
+psnr avg 25.396167755126953
+psnr avg 17.668323516845703
+psnr avg 26.57819938659668
+psnr avg 28.50440788269043
+psnr avg 21.218107223510742
+psnr avg 22.746479034423828
+psnr avg 24.361888885498047
+psnr avg 20.918672561645508
+psnr avg 20.801937103271484
+psnr avg 24.441679000854492
+psnr avg 18.999099731445312
+psnr avg 22.424896240234375
+psnr avg 19.192964553833008
+psnr avg 22.468042373657227
+psnr avg 21.481027603149414
+psnr avg 17.044870376586914
+psnr avg 18.037944793701172
+psnr avg 23.17635726928711
+psnr avg 30.196884155273438
+psnr avg 29.535934448242188
+psnr avg 15.329219818115234
+psnr avg 23.929004669189453
+psnr avg 24.882854461669922
+psnr avg 20.779254913330078
+psnr avg 22.25632667541504
+psnr avg 18.452133178710938
+psnr avg 21.195600509643555
+psnr avg 25.01360321044922
+psnr avg 32.874122619628906
+psnr avg 21.267004013061523
+psnr avg 22.12141990661621
+psnr avg 28.128189086914062
+psnr avg 20.191774368286133
+psnr avg 28.40855598449707
+psnr avg 25.13250160217285
+psnr avg 25.926132202148438
+psnr avg 21.051555633544922
+psnr avg 26.00813102722168
+psnr avg 21.011980056762695
+psnr avg 18.670000076293945
+psnr avg 34.40102767944336
+psnr avg 27.567062377929688
+psnr avg 19.86237335205078
+psnr avg 22.9887752532959
+psnr avg 19.9268798828125
+psnr avg 28.537677764892578
+psnr avg 24.990306854248047
+psnr avg 21.679317474365234
+psnr avg 18.86141014099121
+psnr avg 19.213550567626953
+psnr avg 25.854660034179688
+psnr avg 22.189485549926758
+psnr avg 28.5422306060791
+psnr avg 21.1275577545166
+psnr avg 17.36614418029785
+psnr avg 20.812206268310547
+psnr avg 18.280738830566406
+psnr avg 24.859725952148438
+psnr avg 24.48987579345703
+psnr avg 24.893808364868164
+psnr avg 28.393394470214844
+psnr avg 20.980960845947266
+psnr avg 24.479658126831055
+psnr: 23.1863 (9.621 s/iter)

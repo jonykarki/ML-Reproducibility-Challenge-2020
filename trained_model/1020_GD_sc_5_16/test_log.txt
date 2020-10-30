@@ -1,0 +1,79 @@
+test data : ['./datasets/BSD68']
+sc mode
+loading spams dict @ ./datasets/dictionnaries/256_9x9.pt
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 9, 'noise_level': 5, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 1, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 25, 'aug_scale': 0, 'test_batch': 10, 'out_dir': './trained_model', 'model_name': 'trained_model/1020_GD_sc_5_16/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 12, 'stride_val': 48, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/BSD68', 'verbose': 0, 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  68352 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1020_GD_sc_5_16/ckpt' (epoch 300)
+
+starting eval on test set with stride 12...
+psnr avg 36.650474548339844
+psnr avg 36.413047790527344
+psnr avg 38.47156524658203
+psnr avg 35.80514907836914
+psnr avg 38.12144470214844
+psnr avg 40.980567932128906
+psnr avg 40.52927017211914
+psnr avg 36.23936462402344
+psnr avg 40.82025909423828
+psnr avg 37.17117691040039
+psnr avg 36.630348205566406
+psnr avg 38.310577392578125
+psnr avg 37.56831741333008
+psnr avg 38.94889831542969
+psnr avg 37.79944610595703
+psnr avg 38.242286682128906
+psnr avg 36.99595642089844
+psnr avg 37.83588790893555
+psnr avg 41.41645050048828
+psnr avg 38.332942962646484
+psnr avg 39.093666076660156
+psnr avg 36.12331008911133
+psnr avg 38.2813606262207
+psnr avg 34.99917984008789
+psnr avg 37.68157196044922
+psnr avg 39.3746337890625
+psnr avg 37.98378372192383
+psnr avg 38.04960632324219
+psnr avg 37.20191192626953
+psnr avg 35.54355239868164
+psnr avg 38.20146560668945
+psnr avg 35.22514724731445
+psnr avg 37.93655776977539
+psnr avg 34.77680206298828
+psnr avg 36.254188537597656
+psnr avg 38.98100662231445
+psnr avg 38.43870162963867
+psnr avg 37.80400085449219
+psnr avg 38.58821105957031
+psnr avg 39.6729736328125
+psnr avg 37.043556213378906
+psnr avg 37.86238479614258
+psnr avg 37.05459213256836
+psnr avg 38.009830474853516
+psnr avg 38.26954650878906
+psnr avg 41.28285217285156
+psnr avg 37.11253356933594
+psnr avg 39.16282272338867
+psnr avg 39.00261306762695
+psnr avg 36.939002990722656
+psnr avg 37.72321319580078
+psnr avg 37.630558013916016
+psnr avg 34.945655822753906
+psnr avg 39.15999221801758
+psnr avg 36.62627410888672
+psnr avg 40.67822265625
+psnr avg 37.330142974853516
+psnr avg 37.30307388305664
+psnr avg 45.0296745300293
+psnr avg 37.107017517089844
+psnr avg 36.4295768737793
+psnr avg 40.1828727722168
+psnr avg 35.473655700683594
+psnr avg 37.543548583984375
+psnr avg 37.44702911376953
+psnr avg 36.16465759277344
+psnr avg 35.368656158447266
+psnr avg 36.0421028137207
+psnr: 37.8444 (5.998 s/iter)

@@ -1,0 +1,79 @@
+test data : ['./datasets/CBSD68']
+sc mode
+random init of weights 
+Arguments: {'mode': 'sc', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 50, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': 'trained_model/1023_CD_sc_50_32/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 10, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/CBSD68', 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  27 ; Trainable Params:  119040 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1023_CD_sc_50_32/ckpt' (epoch 300)
+
+starting eval on test set with stride 10...
+psnr avg 22.159025192260742
+psnr avg 21.009136199951172
+psnr avg 22.806316375732422
+psnr avg 23.031023025512695
+psnr avg 22.10593032836914
+psnr avg 22.938335418701172
+psnr avg 17.49188995361328
+psnr avg 24.189281463623047
+psnr avg 24.768821716308594
+psnr avg 20.854806900024414
+psnr avg 22.204689025878906
+psnr avg 22.069433212280273
+psnr avg 20.50774574279785
+psnr avg 20.297332763671875
+psnr avg 21.22220230102539
+psnr avg 18.3555908203125
+psnr avg 21.79075050354004
+psnr avg 18.56448745727539
+psnr avg 21.006961822509766
+psnr avg 20.820037841796875
+psnr avg 16.062213897705078
+psnr avg 17.780012130737305
+psnr avg 21.337432861328125
+psnr avg 29.192813873291016
+psnr avg 26.083675384521484
+psnr avg 14.944059371948242
+psnr avg 22.05828094482422
+psnr avg 22.185348510742188
+psnr avg 19.99439239501953
+psnr avg 20.799665451049805
+psnr avg 17.7154483795166
+psnr avg 20.429698944091797
+psnr avg 22.563003540039062
+psnr avg 27.401020050048828
+psnr avg 20.491287231445312
+psnr avg 20.552003860473633
+psnr avg 26.72836685180664
+psnr avg 19.59752655029297
+psnr avg 25.084285736083984
+psnr avg 22.18744659423828
+psnr avg 24.062461853027344
+psnr avg 20.578025817871094
+psnr avg 22.59832000732422
+psnr avg 19.167491912841797
+psnr avg 17.96125602722168
+psnr avg 30.171737670898438
+psnr avg 25.534832000732422
+psnr avg 19.63316535949707
+psnr avg 21.773311614990234
+psnr avg 18.27765655517578
+psnr avg 25.816823959350586
+psnr avg 23.196584701538086
+psnr avg 20.199962615966797
+psnr avg 18.477951049804688
+psnr avg 18.70496368408203
+psnr avg 24.891380310058594
+psnr avg 21.703927993774414
+psnr avg 25.69580841064453
+psnr avg 20.518211364746094
+psnr avg 16.90953254699707
+psnr avg 20.245288848876953
+psnr avg 17.808399200439453
+psnr avg 24.132356643676758
+psnr avg 22.487178802490234
+psnr avg 22.895566940307617
+psnr avg 25.30170249938965
+psnr avg 19.665735244750977
+psnr avg 23.369844436645508
+psnr: 21.6641 (9.609 s/iter)

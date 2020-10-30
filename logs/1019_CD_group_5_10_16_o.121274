@@ -1,0 +1,37 @@
+group mode
+random init of weights 
+Arguments: {'mode': 'group', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 10, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': '1019_CD_group_10_16', 'resume': True, 'dummy': False, 'tqdm': False, 'test_path': './datasets/BSD68/', 'train_path': './datasets/BSD400/', 'stride_test': 10, 'stride_val': 50, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False, 'tb': False, 'device_id': 1}
+Nb tensors:  29 ; Trainable Params:  119188 ; device:  cuda ; name :  Tesla P100-PCIE-16GB
+
+ existing ckpt detected
+=> loaded checkpoint './trained_model/1019_CD_group_10_16/ckpt' (epoch 283)
+... starting training ...
+
+epoch 283 - train psnr: 37.1741 (573.2 s,  1.433 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 284 - train psnr: 37.2015 (570.0 s,  1.425 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 285 - train psnr: 37.1969 (567.7 s,  1.419 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 286 - train psnr: 37.1963 (572.1 s,  1.430 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 287 - train psnr: 37.2637 (572.1 s,  1.430 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 288 - train psnr: 37.1954 (563.6 s,  1.409 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 289 - train psnr: 37.2106 (571.5 s,  1.429 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+
+starting validation on train set with stride 50...
+validation psnr 37.1328, 37.1265, absolute_delta 6.26e-03, reload counter 0
+epoch 289 - val psnr: 37.1328 (942.2 s,  2.356 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 290 - train psnr: 37.2125 (569.0 s,  1.422 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 291 - train psnr: 37.2261 (561.0 s,  1.403 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 292 - train psnr: 37.2205 (560.7 s,  1.402 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 293 - train psnr: 37.1874 (568.4 s,  1.421 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 294 - train psnr: 37.1803 (567.1 s,  1.418 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 295 - train psnr: 37.2250 (569.8 s,  1.424 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 296 - train psnr: 37.2280 (571.6 s,  1.429 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 297 - train psnr: 37.2463 (568.0 s,  1.420 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 298 - train psnr: 37.2274 (559.4 s,  1.399 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+epoch 299 - train psnr: 37.2240 (574.9 s,  1.437 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+
+starting validation on train set with stride 50...
+validation psnr 37.1321, 37.1328, absolute_delta -7.15e-04, reload counter 0
+epoch 299 - val psnr: 37.1321 (939.6 s,  2.349 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)
+
+starting eval on test set with stride 10...
+epoch 299 - test psnr: 37.1110 (4503.7 s,  66.232 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.6e-05)

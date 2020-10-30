@@ -1,0 +1,19 @@
+
+Lmod is automatically replacing "python2/2.7.16" with "python3/3.7.0".
+
+Traceback (most recent call last):
+  File "train_color_denoising.py", line 155, in <module>
+    os.makedirs(out_dir)
+  File "/opt/apps/intel18/python3/3.7.0/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/opt/apps/intel18/python3/3.7.0/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/trained_600'
+Traceback (most recent call last):
+  File "train_color_denoising.py", line 155, in <module>
+    os.makedirs(out_dir)
+  File "/opt/apps/intel18/python3/3.7.0/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/opt/apps/intel18/python3/3.7.0/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/trained_600'
