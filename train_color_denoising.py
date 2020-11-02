@@ -54,8 +54,8 @@ parser.add_argument("--model_name", type=str, dest="model_name", help="The name 
 parser.add_argument("--resume", type=str2bool, dest="resume", help='Resume training of the model',default=True)
 parser.add_argument("--dummy", type=str2bool, dest="dummy", default=False)
 parser.add_argument("--tqdm", type=str2bool, default=False)
-parser.add_argument("--test_path", type=str, help="Path to the dir containing the testing datasets.", default="./datasets/BSD68/")
-parser.add_argument("--train_path", type=str, help="Path to the dir containing the training datasets.", default="./datasets/BSD400/")
+parser.add_argument("--test_path", type=str, help="Path to the dir containing the testing datasets.", default="./datasets/CBSD68/")
+parser.add_argument("--train_path", type=str, help="Path to the dir containing the training datasets.", default="./datasets/CBSD400/")
 
 #inference
 parser.add_argument("--stride_test", type=int, default=10, help='stride of overlapping image blocks [4,8,16,24,48] kernel_//stride')
