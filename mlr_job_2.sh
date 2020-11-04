@@ -13,7 +13,7 @@
 
 source ~/.bash_profile
 
-python3 train_color_denoising.py --train_batch 16 --noise_level 15 --device_id 0 &
+python3 train_color_denoising.py --train_batch 16 --noise_level 15 --model_name 1102_CD_group_15_16 --device_id 0 &
 
-python3 train_color_denoising.py --train_batch 16 --noise_level 25 --device_id 1 
+python3 train_color_denoising.py --train_batch 16 --noise_level 25 --model_name 1102_CD_group_25_16 --device_id 1 
 
