@@ -2,8 +2,8 @@
 
 #SBATCH -J MLR_2
 #SBATCH -p p100
-#SBATCH -o ./logs/112_CD_group_1525_16_o.%j
-#SBATCH -e ./logs/112_CD_group_1525_16_e.%j
+#SBATCH -o ./logs/115_CD_sc_1525_16_o.%j
+#SBATCH -e ./logs/115_CD_sc_1525_16_e.%j
 #SBATCH -N 1
 #SBATCH -n 4
 #SBATCH -t 24:00:00
@@ -13,7 +13,7 @@
 
 source ~/.bash_profile
 
-python3 train_color_denoising.py --train_batch 16 --noise_level 15 --model_name 1102_CD_group_15_16 --device_id 0 &
+python3 train_color_denoising.py --train_batch 16 --noise_level 15 --mode sc --device_id 0 &
 
-python3 train_color_denoising.py --train_batch 16 --noise_level 25 --model_name 1102_CD_group_25_16 --device_id 1 
+python3 train_color_denoising.py --train_batch 16 --noise_level 25 --mode sc --device_id 1 
 
