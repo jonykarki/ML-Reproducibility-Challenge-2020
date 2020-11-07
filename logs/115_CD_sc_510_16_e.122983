@@ -1,0 +1,2 @@
+/work/07792/jkarki/maverick2/Python3/torch/nn/modules/container.py:434: UserWarning: Setting attributes on ParameterList is not supported.
+  warnings.warn("Setting attributes on ParameterList is not supported.")

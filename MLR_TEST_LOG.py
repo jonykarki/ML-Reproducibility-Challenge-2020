@@ -8,6 +8,7 @@ trained_models = os.listdir("trained_model")
 dict_ = {
     "CD": "color",
     "GD": "gray",
+    "D": "mosaic"
 }
 
 untested_models = []

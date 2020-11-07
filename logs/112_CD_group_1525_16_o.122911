@@ -1,0 +1,34 @@
+group mode
+random init of weights 
+Arguments: {'mode': 'group', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 25, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': '1102_CD_group_25_16', 'resume': True, 'dummy': False, 'tqdm': False, 'test_path': './datasets/CBSD68/', 'train_path': './datasets/CBSD400/', 'stride_test': 10, 'stride_val': 50, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False, 'tb': False, 'device_id': 1}
+Nb tensors:  29 ; Trainable Params:  119188 ; device:  cuda ; name :  Tesla P100-PCIE-16GB
+
+ existing ckpt detected
+=> loaded checkpoint './trained_model/1102_CD_group_25_16/ckpt' (epoch 299)
+... starting training ...
+
+epoch 299 - train psnr: 31.8282 (559.9 s,  1.400 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.1e-05)
+
+starting validation on train set with stride 50...
+validation psnr 31.5378, 31.5358, absolute_delta 2.02e-03, reload counter 0
+epoch 299 - val psnr: 31.5378 (1617.9 s,  4.045 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.1e-05)
+
+starting eval on test set with stride 10...
+epoch 299 - test psnr: 31.4055 (5175.5 s,  76.110 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.1e-05)
+group mode
+random init of weights 
+Arguments: {'mode': 'group', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 15, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': '1102_CD_group_15_16', 'resume': True, 'dummy': False, 'tqdm': False, 'test_path': './datasets/CBSD68/', 'train_path': './datasets/CBSD400/', 'stride_test': 10, 'stride_val': 50, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False, 'tb': False, 'device_id': 0}
+Nb tensors:  29 ; Trainable Params:  119188 ; device:  cuda ; name :  Tesla P100-PCIE-16GB
+
+ existing ckpt detected
+=> loaded checkpoint './trained_model/1102_CD_group_15_16/ckpt' (epoch 299)
+... starting training ...
+
+epoch 299 - train psnr: 34.4489 (559.8 s,  1.399 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.1e-05)
+
+starting validation on train set with stride 50...
+validation psnr 34.1791, 34.1780, absolute_delta 1.11e-03, reload counter 0
+epoch 299 - val psnr: 34.1791 (1617.7 s,  4.044 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.1e-05)
+
+starting eval on test set with stride 10...
+epoch 299 - test psnr: 34.1053 (5175.3 s,  76.107 s/iter, max gpu mem allocated 14678.3 Mb, lr 2.1e-05)

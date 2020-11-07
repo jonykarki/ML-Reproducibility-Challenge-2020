@@ -1,5 +1,3 @@
-# @jkarki, using DataParallel to parallelize the training across GPUS. (gtx node only for now)
-
 import dataloaders
 import torch
 import numpy as np
@@ -51,7 +49,6 @@ parser.add_argument("--test_batch", type=int, default=10, help='batch size durin
 parser.add_argument("--aug_scale", type=int, default=0)
 
 #save
-# @jkarki, new trained_model_parallel dir for models trained in parallel
 parser.add_argument("--out_dir", type=str, dest="out_dir", help="Results' dir path", default='./trained_model_parallel')
 parser.add_argument("--model_name", type=str, dest="model_name", help="The name of the model to be saved.", default=None)
 parser.add_argument("--resume", type=str2bool, dest="resume", help='Resume training of the model',default=True)
@@ -81,19 +78,12 @@ parser.add_argument("--tb", type=str2bool, default=False)
 ####
 
 # @jkarki, add a new argument to specify the GPU device id
-parser.add_argument("--device_id", type=int, default=0, help="0 (the first half), 1 (the second half)") 
+parser.add_argument("--device_id", type=int, default=0, help="the device id (0-3) for tacc nodes to select a particular gpu to train on") 
 ####
 
 args = parser.parse_args()
 
-# @jkarki, devices to train on for gtx node.
-DATA_PARALLEL_GPUS = [0, 1] if args.device_id == 0 else [2, 3]
-
-device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
-# @jkarki, set the torch device into the one from args
-# torch.cuda.set_device(args.device_id)
-####
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 device_name = torch.cuda.get_device_name(args.device_id) if torch.cuda.is_available() else 'cpu'
 capability = torch.cuda.get_device_capability(args.device_id) if torch.cuda.is_available() else os.cpu_count()
@@ -133,13 +123,7 @@ elif args.mode == 'sc':
 else:
     raise NotImplementedError
 
-model = Lista(params).to(device)
-
-# @jkarki, use the dataparallel on the model and specify the GPUs.
-# model = torch.nn.DataParallel(model).cuda()
-torch.distributed.init_process_group(backend='nccl', init_method='tcp://127.0.0.1:33445', rank=0, world_size=4)
-model = torch.nn.parallel.DistributedDataParallel(model,device_ids=[0,1,2,3],output_device=0)
-
+model = Lista(params).to(device=device)
 
 optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, eps=args.eps)
 
@@ -158,9 +142,9 @@ psnr = {x: np.zeros(args.num_epochs) for x in ['train', 'test', 'val']}
 # table_lookup: CD_METHOD_NOISE-LEVEL_BATCH-SIZE
 # CD: Color Denoising, Method: SC or GroupSC, the noise_level, and training batch size.
 table_lookup = f"CD_{args.mode}_{args.noise_level}_{args.train_batch}"
-# model_name = args.model_name if args.model_name is not None else mlr_generate_key(table_lookup)
+model_name = args.model_name if args.model_name is not None else mlr_generate_key(table_lookup)
 
-model_name = args.model_name if args.model_name is not None else generate_key()
+# model_name = args.model_name if args.model_name is not None else generate_key()
 ####
 out_dir = os.path.join(args.out_dir, model_name)
 if not os.path.exists(out_dir):
