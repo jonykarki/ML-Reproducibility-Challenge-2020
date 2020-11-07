@@ -1,2 +1,14 @@
 /work/07792/jkarki/maverick2/Python3/torch/nn/modules/container.py:434: UserWarning: Setting attributes on ParameterList is not supported.
   warnings.warn("Setting attributes on ParameterList is not supported.")
+Traceback (most recent call last):
+  File "train_mosaic.py", line 290, in <module>
+    batch_out_blocks[id_from:id_to] = model(inp, mask=bayer_elem)
+  File "/work/07792/jkarki/maverick2/Python3/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/work/07792/jkarki/maverick2/ML-Reproducibility-Challenge-2020/model/mosaic_group.py", line 180, in forward
+    similarity_map_new = self.simLayer[counter_lista](col).flatten(2, 3).view(b, 1, N, N)
+  File "/work/07792/jkarki/maverick2/Python3/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/work/07792/jkarki/maverick2/ML-Reproducibility-Challenge-2020/ops_nonlocal/matching.py", line 33, in forward
+    dist = (x_norm + y_norm.transpose(1,2) - 2.0 * dint).clamp(0.)
+RuntimeError: CUDA out of memory. Tried to allocate 2.33 GiB (GPU 0; 15.90 GiB total capacity; 13.47 GiB already allocated; 227.88 MiB free; 14.86 GiB reserved in total by PyTorch)

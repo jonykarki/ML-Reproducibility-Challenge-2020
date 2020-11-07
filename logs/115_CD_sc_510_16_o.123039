@@ -25,3 +25,90 @@ epoch 67 - train psnr: 60.0292 (503.6 s,  1.259 s/iter, max gpu mem allocated 13
 epoch 68 - train psnr: 60.8640 (503.4 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.5e-04)
 epoch 69 - train psnr: 60.8663 (504.1 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.5e-04)
 starting validation on train set with stride 50...
+validation psnr 60.9522, 85.4119, absolute_delta -2.45e+01, reload counter 1
+backtracking: previous ckpt detected
+loaded checkpoint './trained_model/1027_D_group_25_16/ckpt_lasteval' (epoch 59), decreasing lr ==> 1.97e-04
+epoch 59 - val psnr: 0.0000 (826.3 s,  2.066 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 60 - train psnr: 60.0674 (503.9 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 61 - train psnr: 60.4059 (503.9 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 62 - train psnr: 60.4121 (504.0 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 63 - train psnr: 60.5448 (504.0 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 64 - train psnr: 59.5774 (504.0 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 65 - train psnr: 60.5984 (504.6 s,  1.261 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 66 - train psnr: 60.7544 (504.1 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 67 - train psnr: 60.1430 (504.2 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 68 - train psnr: 60.8978 (503.7 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 69 - train psnr: 60.8694 (503.5 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+starting validation on train set with stride 50...
+validation psnr 88.1186, 85.4119, absolute_delta 2.71e+00, reload counter 2
+epoch 69 - val psnr: 88.1186 (825.7 s,  2.064 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 70 - train psnr: 60.6481 (503.3 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 71 - train psnr: 60.3062 (503.0 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 72 - train psnr: 61.1703 (502.9 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 73 - train psnr: 61.2896 (502.8 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 74 - train psnr: 61.3701 (502.9 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 75 - train psnr: 61.3949 (502.6 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 76 - train psnr: 61.0749 (502.7 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 77 - train psnr: 61.4594 (503.6 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 78 - train psnr: 60.3277 (503.3 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 79 - train psnr: 61.5502 (503.2 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+starting validation on train set with stride 50...
+validation psnr 88.4721, 88.1186, absolute_delta 3.54e-01, reload counter 0
+epoch 79 - val psnr: 88.4721 (825.4 s,  2.063 s/iter, max gpu mem allocated 13449.7 Mb, lr 2.0e-04)
+epoch 80 - train psnr: 61.7107 (503.5 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 81 - train psnr: 61.7834 (503.8 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 82 - train psnr: 61.7652 (503.8 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 83 - train psnr: 61.6960 (503.8 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 84 - train psnr: 61.6821 (503.8 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 85 - train psnr: 61.7988 (503.8 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 86 - train psnr: 61.7910 (503.6 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 87 - train psnr: 61.9156 (503.7 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 88 - train psnr: 61.8620 (503.5 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+epoch 89 - train psnr: 61.9689 (503.4 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 6.9e-05)
+starting validation on train set with stride 50...
+validation psnr 82.4704, 88.4721, absolute_delta -6.00e+00, reload counter 0
+backtracking: previous ckpt detected
+loaded checkpoint './trained_model/1027_D_group_25_16/ckpt_lasteval' (epoch 79), decreasing lr ==> 1.57e-04
+epoch 79 - val psnr: 88.4721 (825.7 s,  2.064 s/iter, max gpu mem allocated 13449.7 Mb, lr 1.6e-04)
+epoch 80 - train psnr: 61.6267 (503.9 s,  1.260 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 81 - train psnr: 61.6684 (502.9 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 82 - train psnr: 61.6747 (502.6 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 83 - train psnr: 61.6881 (502.4 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 84 - train psnr: 61.7768 (502.4 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 85 - train psnr: 61.8088 (502.6 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 86 - train psnr: 61.8389 (502.1 s,  1.255 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 87 - train psnr: 61.8647 (503.2 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 88 - train psnr: 61.9289 (502.3 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 89 - train psnr: 61.9166 (502.2 s,  1.255 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+starting validation on train set with stride 50...
+validation psnr 90.8128, 88.4721, absolute_delta 2.34e+00, reload counter 1
+epoch 89 - val psnr: 90.8128 (824.4 s,  2.061 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 90 - train psnr: 61.7954 (502.4 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 91 - train psnr: 61.9746 (502.6 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 92 - train psnr: 61.9872 (503.0 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 93 - train psnr: 61.9233 (503.0 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 94 - train psnr: 62.0233 (503.0 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 95 - train psnr: 61.9526 (503.1 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 96 - train psnr: 62.1633 (503.1 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 97 - train psnr: 62.0574 (503.5 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 98 - train psnr: 62.1096 (503.5 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+epoch 99 - train psnr: 62.0095 (503.5 s,  1.259 s/iter, max gpu mem allocated 13449.7 Mb, lr 5.5e-05)
+starting validation on train set with stride 50...
+validation psnr 89.9366, 90.8128, absolute_delta -8.76e-01, reload counter 0
+backtracking: previous ckpt detected
+loaded checkpoint './trained_model/1027_D_group_25_16/ckpt_lasteval' (epoch 89), decreasing lr ==> 4.40e-05
+epoch 89 - val psnr: 90.8128 (825.6 s,  2.064 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 90 - train psnr: 61.9229 (503.4 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 91 - train psnr: 61.9678 (503.2 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 92 - train psnr: 61.8750 (503.2 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 93 - train psnr: 61.8924 (503.2 s,  1.258 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 94 - train psnr: 61.9289 (502.9 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 95 - train psnr: 62.0405 (502.7 s,  1.257 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 96 - train psnr: 62.1151 (502.4 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 97 - train psnr: 62.0869 (502.4 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 98 - train psnr: 62.0398 (502.5 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+epoch 99 - train psnr: 62.0403 (502.5 s,  1.256 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+starting validation on train set with stride 50...
+validation psnr 90.9216, 90.8128, absolute_delta 1.09e-01, reload counter 1
+epoch 99 - val psnr: 90.9216 (824.6 s,  2.061 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+starting eval on test set with stride 10...
