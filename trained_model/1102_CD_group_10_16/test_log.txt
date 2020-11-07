@@ -1,0 +1,79 @@
+test data : ['./datasets/CBSD68']
+group mode
+random init of weights 
+Arguments: {'mode': 'group', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 10, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 6, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'backtrack_decay': 0.8, 'eps': 0.001, 'validation_every': 10, 'backtrack': 1, 'num_epochs': 300, 'train_batch': 16, 'test_batch': 10, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': 'trained_model/1102_CD_group_10_16/ckpt', 'data_path': './datasets/', 'resume': True, 'dummy': False, 'tqdm': False, 'stride_test': 10, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'testpath': './datasets/CBSD68', 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False}
+Nb tensors:  29 ; Trainable Params:  119188 ; device:  cuda ; name :  GeForce GTX 1080 Ti
+
+ existing ckpt detected
+=> loaded checkpoint 'trained_model/1102_CD_group_10_16/ckpt' (epoch 300)
+
+starting eval on test set with stride 10...
+psnr avg 36.371795654296875
+psnr avg 36.01176834106445
+psnr avg 35.58412551879883
+psnr avg 35.871986389160156
+psnr avg 36.606117248535156
+psnr avg 35.218833923339844
+psnr avg 39.33038330078125
+psnr avg 35.729183197021484
+psnr avg 35.87518310546875
+psnr avg 38.95342254638672
+psnr avg 39.20448684692383
+psnr avg 34.57061004638672
+psnr avg 37.45651626586914
+psnr avg 37.568336486816406
+psnr avg 33.70035171508789
+psnr avg 35.47501754760742
+psnr avg 36.655094146728516
+psnr avg 35.012027740478516
+psnr avg 35.21321105957031
+psnr avg 37.41393280029297
+psnr avg 32.797855377197266
+psnr avg 37.17478942871094
+psnr avg 34.71314239501953
+psnr avg 43.65890884399414
+psnr avg 36.04366683959961
+psnr avg 36.38515853881836
+psnr avg 35.89035415649414
+psnr avg 34.35262680053711
+psnr avg 36.335418701171875
+psnr avg 34.67441177368164
+psnr avg 36.00836181640625
+psnr avg 36.02840805053711
+psnr avg 34.308170318603516
+psnr avg 36.822715759277344
+psnr avg 37.488922119140625
+psnr avg 34.70711135864258
+psnr avg 39.326332092285156
+psnr avg 37.48814010620117
+psnr avg 36.657928466796875
+psnr avg 33.8476676940918
+psnr avg 37.21756362915039
+psnr avg 37.18743896484375
+psnr avg 35.089656829833984
+psnr avg 33.32581329345703
+psnr avg 34.862403869628906
+psnr avg 39.78364562988281
+psnr avg 37.890926361083984
+psnr avg 38.61854934692383
+psnr avg 35.60577392578125
+psnr avg 34.04985046386719
+psnr avg 36.805606842041016
+psnr avg 35.95783996582031
+psnr avg 34.5047607421875
+psnr avg 36.70658493041992
+psnr avg 36.352264404296875
+psnr avg 39.34514617919922
+psnr avg 37.86363220214844
+psnr avg 36.828460693359375
+psnr avg 37.07306671142578
+psnr avg 35.751861572265625
+psnr avg 36.88431930541992
+psnr avg 37.17927169799805
+psnr avg 40.099342346191406
+psnr avg 35.50472640991211
+psnr avg 34.358829498291016
+psnr avg 36.53729248046875
+psnr avg 34.75593185424805
+psnr avg 36.70747375488281
+psnr: 36.4027 (54.879 s/iter)
