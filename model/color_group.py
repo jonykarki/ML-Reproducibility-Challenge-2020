@@ -49,17 +49,20 @@ class groupLista(nn.Module):
         super(groupLista, self).__init__()
 
         if params.spams:
-            str_spams = f'./datasets/dictionnaries/c{params.num_filters}_{params.kernel_size}x{params.kernel_size}.pt'
+            str_spams = f'./datasets/dictionnaries/{params.num_filters}_{params.kernel_size}x{params.kernel_size}.pt'
             print(f'loading spams dict @ {str_spams}')
             try:
+                # @jkarki, load the dictionary and apply the transpose to it
                 D = torch.load(str_spams).t()
             except:
                 print('no spams dict found for this set of parameters')
         else:
             print('random init of weights ')
+            # @jkarki, if dictionary not found initialize randomly
             D = torch.randn(params.kernel_size ** 2*NUM_CHANNEL, params.num_filters)
 
         dtd = D.t() @ D
+        # @jkarki, singular value decomposition of dtd.
         _, s, _ = dtd.svd()
         l = torch.max(s)
         D /= torch.sqrt(l)

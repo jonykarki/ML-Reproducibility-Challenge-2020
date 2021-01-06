@@ -1,0 +1,15 @@
+group mode
+random init of weights 
+Arguments: {'mode': 'group', 'stride': 1, 'num_filters': 256, 'kernel_size': 7, 'noise_level': 25, 'unfoldings': 24, 'patch_size': 56, 'rescaling_init_val': 1.0, 'lmbda_prox': 0.02, 'spams_init': 0, 'nu_init': 1, 'corr_update': 3, 'multi_theta': 1, 'diag_rescale_gamma': 0, 'diag_rescale_patch': 1, 'freq_corr_update': 8, 'mask_windows': 1, 'center_windows': 1, 'multi_std': 0, 'lr': 0.0006, 'lr_step': 80, 'lr_decay': 0.35, 'bck_decay': 0.8, 'eps': 0.001, 'val_every': 10, 'backtrack': 1, 'num_epochs': 400, 'train_batch': 16, 'test_batch': 100, 'aug_scale': 0, 'out_dir': './trained_model', 'model_name': '1027_D_group_25_16', 'resume': True, 'dummy': False, 'tqdm': False, 'test_path': './datasets/BSD68/', 'train_path': './datasets/BSD400/', 'stride_test': 10, 'stride_val': 50, 'test_every': 100, 'block_inference': True, 'pad_image': 0, 'pad_block': 1, 'pad_patch': 0, 'no_pad': False, 'custom_pad': None, 'n_worker': 8, 'grad': 0, 'opt': 'adam', 'weight_decay': 0, 'scale_min': 0.001, 'scale_max': 0.1, 'bckThrs': 0.3, 'tb': False, 'nu_var': 0.01, 'freq_var': 3, 'var_reg': False, 'device_id': 0}
+Nb tensors:  29 ; Trainable Params:  119188 ; device:  cuda ; name :  Tesla P100-PCIE-16GB
+list trainable params:  ['apply_A.weight', 'apply_D.weight', 'apply_W.weight', 'std.0', 'nu.0', 'lmbda.0', 'lmbda.1', 'lmbda.2', 'lmbda.3', 'lmbda.4', 'lmbda.5', 'lmbda.6', 'lmbda.7', 'lmbda.8', 'lmbda.9', 'lmbda.10', 'lmbda.11', 'lmbda.12', 'lmbda.13', 'lmbda.14', 'lmbda.15', 'lmbda.16', 'lmbda.17', 'lmbda.18', 'lmbda.19', 'lmbda.20', 'lmbda.21', 'lmbda.22', 'lmbda.23']
+
+ existing ckpt detected
+=> loaded checkpoint './trained_model/1027_D_group_25_16/ckpt' (epoch 99)
+... starting training ...
+
+epoch 99 - train psnr: 62.0747 (501.3 s,  1.253 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+starting validation on train set with stride 50...
+validation psnr 91.5770, 90.8128, absolute_delta 7.64e-01, reload counter 0
+epoch 99 - val psnr: 91.5770 (819.9 s,  2.050 s/iter, max gpu mem allocated 13449.7 Mb, lr 4.4e-05)
+starting eval on test set with stride 10...

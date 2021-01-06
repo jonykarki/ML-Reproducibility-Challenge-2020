@@ -102,7 +102,7 @@ val_path = train_path
 noise_std = args.noise_level / 255
 
 loaders = dataloaders.get_dataloaders(train_path, test_path, val_path, crop_size=args.patch_size,
-                                      batch_size=args.train_batch, downscale=args.aug_scale, concat=1)
+                                      batch_size=args.train_batch, downscale=args.aug_scale, concat=0)
 
 
 if args.mode == 'group':
@@ -275,7 +275,6 @@ while epoch < args.num_epochs:
                     output = model(noisy_batch)
                     loss = (mask * (output - batch)).pow(2).sum() / batch.shape[0]
                     loss_psnr = -10 * torch.log10((output - batch).pow(2).mean([1, 2, 3])).mean()
-
                     loss.backward()
                     optimizer.step()
 
